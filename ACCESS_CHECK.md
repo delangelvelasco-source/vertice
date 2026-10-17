@@ -1,0 +1,1 @@
+Prueba temporal de acceso de escritura para VÉRTICE. Este archivo se eliminará después de verificar los permisos.
