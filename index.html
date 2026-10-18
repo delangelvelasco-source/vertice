@@ -81,6 +81,44 @@ a:focus-visible{outline:2px solid var(--copper);outline-offset:4px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 
+
+/* Servicios: presentación industrial visual y mobile-first */
+#servicios-detalle{background:#f4f1ec}
+#servicios-detalle .section-head{align-items:end}
+#servicios-detalle .details-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+#servicios-detalle .service-detail-card{padding:0 0 22px;overflow:hidden;border-color:#d9d1c7;background:#fff;box-shadow:0 8px 24px #17171908}
+#servicios-detalle .service-photo{height:190px;position:relative;overflow:hidden;background:#d6d0c8;margin-bottom:20px}
+#servicios-detalle .service-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#17171900 45%,#17171938)}
+#servicios-detalle .service-photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+#servicios-detalle .service-detail-card:hover .service-photo img{transform:scale(1.045)}
+#servicios-detalle .service-detail-card>.detail-num,
+#servicios-detalle .service-detail-card>h3,
+#servicios-detalle .service-detail-card>ul{margin-left:22px;margin-right:22px}
+#servicios-detalle .service-detail-card>.detail-num{font-size:10px;letter-spacing:.18em}
+#servicios-detalle .service-detail-card>h3{font-size:21px;line-height:1.18;margin-top:10px;margin-bottom:12px}
+#servicios-detalle .service-detail-card ul{padding-left:18px;margin-top:0}
+#servicios-detalle .service-detail-card li{padding-left:2px;margin:7px 0;font-size:13px;line-height:1.65}
+#servicios-detalle .detail-note{border-left-color:var(--copper)}
+@media(max-width:760px){
+ #servicios-detalle .details-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ #servicios-detalle .service-photo{height:155px;margin-bottom:16px}
+ #servicios-detalle .service-detail-card{padding-bottom:16px}
+ #servicios-detalle .service-detail-card>.detail-num,
+ #servicios-detalle .service-detail-card>h3,
+ #servicios-detalle .service-detail-card>ul{margin-left:15px;margin-right:15px}
+ #servicios-detalle .service-detail-card>h3{font-size:18px}
+}
+@media(max-width:520px){
+ #servicios-detalle .details-grid{grid-template-columns:1fr;gap:14px}
+ #servicios-detalle .service-detail-card{display:grid;grid-template-columns:112px minmax(0,1fr);column-gap:14px;align-items:start;padding:14px}
+ #servicios-detalle .service-photo{grid-column:1;grid-row:1 / span 3;height:100%;min-height:165px;margin:0;border-radius:2px}
+ #servicios-detalle .service-detail-card>.detail-num{grid-column:2;margin:3px 0 0;font-size:9px;letter-spacing:.12em}
+ #servicios-detalle .service-detail-card>h3{grid-column:2;margin:8px 0 8px;font-size:17px}
+ #servicios-detalle .service-detail-card>ul{grid-column:1 / -1;margin:13px 2px 0;padding-left:18px}
+ #servicios-detalle .service-detail-card li{font-size:13px;margin:5px 0}
+}
+@media(prefers-reduced-motion:reduce){#servicios-detalle .service-photo img{transition:none}}
+
 </style></head><body>
 <header><div class="wrap nav"><a href="#" class="logo" aria-label="VÉRTICE, inicio">VÉRTICE<small>IMAGEN COMERCIAL</small></a><nav class="main-nav" aria-label="Navegación principal"><a href="#que-hacemos">Servicios</a><a href="#proyectos">Portafolio</a><a href="#modalidades">Cómo trabajamos</a></nav><a class="navcta" href="#contacto">Cotizar proyecto <span aria-hidden="true">↗</span></a></div></header>
 <main><section class="hero" id="que-hacemos"><div class="wrap"><div class="eyebrow">Qué hacemos</div><h1>Soluciones para<br>espacios de marca.</h1><p>Integramos diseño, materiales, iluminación y comunicación visual para dar presencia a negocios, productos y marcas en sus espacios comerciales.</p><div class="services-grid"><article class="service-card"><span>01</span><h3>Fachadas y anuncios</h3></article><article class="service-card"><span>02</span><h3>Letras 3D y logotipos</h3></article><article class="service-card"><span>03</span><h3>Recepciones y mobiliario</h3></article><article class="service-card"><span>04</span><h3>Exhibidores y displays</h3></article><article class="service-card"><span>05</span><h3>Stands y activaciones</h3></article><article class="service-card"><span>06</span><h3>Señalización e iluminación</h3></article></div><div class="hero-actions"><a class="btn" href="#proyectos">Ver portafolio ↓</a><a class="btn outline" target="_blank" rel="noopener" href="https://wa.me/528125064575?text=Hola%2C%20quiero%20cotizar%20un%20proyecto%20de%20imagen%20comercial">Cotizar por WhatsApp ↗</a></div></div></section>
@@ -89,12 +127,12 @@ a:focus-visible{outline:2px solid var(--copper);outline-offset:4px}
 <section class="section soft" id="servicios-detalle"><div class="wrap">
 <div class="section-head"><div><div class="eyebrow">Servicios a la medida</div><h2>De una pieza a un proyecto integral.</h2></div><p>Fabricamos soluciones para exposiciones, eventos, puntos de venta, negocios y espacios comerciales. Cada propuesta se adapta al uso, las dimensiones y el presupuesto.</p></div>
 <div class="details-grid">
-<article class="detail-card"><span class="detail-num">01 / FABRICACIÓN</span><h3>Stands y exhibidores</h3><ul><li>Stands para exposiciones, eventos y activaciones.</li><li>Mostradores, módulos, mamparas y fondos publicitarios.</li><li>Exhibidores comerciales y displays para punto de venta.</li><li>Accesorios, piezas individuales y estructuras modulares.</li></ul></article>
-<article class="detail-card"><span class="detail-num">02 / ESTRUCTURAS</span><h3>Metal y bastidores</h3><ul><li>Estructuras metálicas y bastidores fabricados a medida.</li><li>PTR, perfiles metálicos y láminas.</li><li>Panel compuesto de aluminio.</li><li>Diseños desmontables, transportables y reutilizables.</li></ul></article>
-<article class="detail-card"><span class="detail-num">03 / MOBILIARIO</span><h3>Muebles y acabados</h3><ul><li>Mostradores, recepciones y mobiliario comercial.</li><li>Triplay, MDF y melamina.</li><li>Acabados personalizados según el diseño.</li><li>Alternativas de materiales según presupuesto y uso.</li></ul></article>
-<article class="detail-card"><span class="detail-num">04 / COMUNICACIÓN VISUAL</span><h3>Impresión y gráficos</h3><ul><li>Impresión de lona y aplicación de vinil.</li><li>Vinil de recorte e impreso.</li><li>Lona translúcida para cajas de luz.</li><li>Aplicación de logotipos e imágenes corporativas.</li></ul></article>
-<article class="detail-card"><span class="detail-num">05 / ILUMINACIÓN</span><h3>Letras y cajas de luz</h3><ul><li>Letras iluminadas y letras 3D.</li><li>Cajas de luz y elementos publicitarios.</li><li>Fachadas, anuncios y señalización.</li><li>Renovación de imagen para espacios comerciales.</li></ul></article>
-<article class="detail-card"><span class="detail-num">06 / SERVICIO EN SITIO</span><h3>Instalación y mantenimiento</h3><ul><li>Traslado, montaje y desmontaje según cotización.</li><li>Armado y colocación de estructuras y anuncios.</li><li>Retiro de estructuras al terminar el evento.</li><li>Renovación publicitaria sin sustituir toda la estructura cuando el diseño lo permita.</li></ul></article>
+<article class="detail-card service-detail-card"><div class="service-photo"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=80" alt="Fotografía ilustrativa de fabricación y trabajo técnico" loading="lazy"></div><span class="detail-num">01 / FABRICACIÓN</span><h3>Stands y exhibidores</h3><ul><li>Stands para exposiciones, eventos y activaciones.</li><li>Mostradores, módulos, mamparas y fondos publicitarios.</li><li>Exhibidores comerciales y displays para punto de venta.</li><li>Accesorios, piezas individuales y estructuras modulares.</li></ul></article>
+<article class="detail-card service-detail-card"><div class="service-photo"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80" alt="Fotografía ilustrativa de estructuras y montaje" loading="lazy"></div><span class="detail-num">02 / ESTRUCTURAS</span><h3>Metal y bastidores</h3><ul><li>Estructuras metálicas y bastidores fabricados a medida.</li><li>PTR, perfiles metálicos y láminas.</li><li>Panel compuesto de aluminio.</li><li>Diseños desmontables, transportables y reutilizables.</li></ul></article>
+<article class="detail-card service-detail-card"><div class="service-photo"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80" alt="Fotografía ilustrativa de mobiliario e interiores" loading="lazy"></div><span class="detail-num">03 / MOBILIARIO</span><h3>Muebles y acabados</h3><ul><li>Mostradores, recepciones y mobiliario comercial.</li><li>Triplay, MDF y melamina.</li><li>Acabados personalizados según el diseño.</li><li>Alternativas de materiales según presupuesto y uso.</li></ul></article>
+<article class="detail-card service-detail-card"><div class="service-photo"><img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=1000&q=80" alt="Fotografía ilustrativa de comunicación visual y eventos" loading="lazy"></div><span class="detail-num">04 / COMUNICACIÓN VISUAL</span><h3>Impresión y gráficos</h3><ul><li>Impresión de lona y aplicación de vinil.</li><li>Vinil de recorte e impreso.</li><li>Lona translúcida para cajas de luz.</li><li>Aplicación de logotipos e imágenes corporativas.</li></ul></article>
+<article class="detail-card service-detail-card"><div class="service-photo"><img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1000&q=80" alt="Fotografía ilustrativa de arquitectura e iluminación" loading="lazy"></div><span class="detail-num">05 / ILUMINACIÓN</span><h3>Letras y cajas de luz</h3><ul><li>Letras iluminadas y letras 3D.</li><li>Cajas de luz y elementos publicitarios.</li><li>Fachadas, anuncios y señalización.</li><li>Renovación de imagen para espacios comerciales.</li></ul></article>
+<article class="detail-card service-detail-card"><div class="service-photo"><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1000&q=80" alt="Fotografía ilustrativa de instalación técnica" loading="lazy"></div><span class="detail-num">06 / SERVICIO EN SITIO</span><h3>Instalación y mantenimiento</h3><ul><li>Traslado, montaje y desmontaje según cotización.</li><li>Armado y colocación de estructuras y anuncios.</li><li>Retiro de estructuras al terminar el evento.</li><li>Renovación publicitaria sin sustituir toda la estructura cuando el diseño lo permita.</li></ul></article>
 </div>
 <div class="detail-note"><strong>Materiales y acabados:</strong> la selección se define de acuerdo con el diseño, el uso, la durabilidad esperada, las condiciones del sitio y el presupuesto. La disponibilidad y especificación final se confirma en la cotización.</div>
 </div></section>
